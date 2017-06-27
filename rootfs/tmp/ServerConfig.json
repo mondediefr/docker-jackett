@@ -1,0 +1,10 @@
+{
+  "Port": 9117,
+  "AllowExternal": true,
+  "APIKey": "<apikey>",
+  "AdminPassword": null,
+  "InstanceId": "<instanceid>",
+  "BlackholeDir": null,
+  "UpdateDisabled": true,
+  "UpdatePrerelease": false
+}

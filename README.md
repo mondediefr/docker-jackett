@@ -1,5 +1,9 @@
 # Jackett Image
 
+[![Build Status](https://drone.xataz.net/api/badges/xataz/docker-jackett/status.svg)](https://drone.xataz.net/xataz/docker-jackett)
+[![](https://images.microbadger.com/badges/image/xataz/jackett.svg)](https://microbadger.com/images/xataz/jackett "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/xataz/jackett.svg)](https://microbadger.com/images/xataz/jackett "Get your own version badge on microbadger.com")
+
 > This image is build and push with [drone.io](https://github.com/drone/drone), a circle-ci like self-hosted.
 > If you don't trust, you can build yourself.
 

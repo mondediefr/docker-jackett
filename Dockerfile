@@ -8,7 +8,7 @@ ENV UID=991 \
 LABEL description="Jackett based on alpine" \
       tags="latest 0.7.1533 0.7 0" \
       maintainer="xataz <https://github.com/xataz>" \
-      build_ver="2017071001"
+      build_ver="2017071201"
 
 RUN apk add --no-cache wget \
             libcurl \
@@ -16,8 +16,10 @@ RUN apk add --no-cache wget \
             s6 \
             su-exec \
     && wget https://github.com/Jackett/Jackett/releases/download/v${JACKETT_VER}/Jackett.Binaries.Mono.tar.gz -O /tmp/Jackett.Binaries.Mono.tar.gz \
+    && wget https://curl.haxx.se/ca/cacert.pem -O /tmp/cacert.pem \
+    && cert-sync /tmp/cacert.pem \
     && tar xzf /tmp/Jackett.Binaries.Mono.tar.gz -C /usr \
-    && apk del wget \
+    && apk del --no-cache wget \
     && rm -rf /tmp/*
 
 EXPOSE 9117

@@ -8,7 +8,7 @@
 > If you don't trust, you can build yourself.
 
 ## Tag available
-* latest, 0.8.715, 0.8, 0 [(Dockerfile)](https://github.com/xataz/docker-jackett/blob/master/Dockerfile)
+* latest, 0.8.716, 0.8, 0 [(Dockerfile)](https://github.com/xataz/docker-jackett/blob/master/Dockerfile)
 
 ## Description
 What is [jackett](https://github.com/Jackett/Jackett) ?

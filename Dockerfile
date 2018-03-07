@@ -8,7 +8,7 @@ ENV UID=991 \
 LABEL description="Jackett based on alpine" \
       tags="latest 0.8.743 0.8 0" \
       maintainer="xataz <https://github.com/xataz>" \
-      build_ver="201803060730"
+      build_ver="201803070730"
 
 RUN apk add --no-cache wget \
             libcurl \

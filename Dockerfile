@@ -1,14 +1,14 @@
 FROM xataz/mono:5
 
-ARG JACKETT_VER=0.8.749
+ARG JACKETT_VER=0.8.763
 
 ENV UID=991 \
     GID=991
 
 LABEL description="Jackett based on alpine" \
-      tags="latest 0.8.749 0.8 0" \
+      tags="latest 0.8.763 0.8 0" \
       maintainer="xataz <https://github.com/xataz>" \
-      build_ver="201803100900"
+      build_ver="201803150900"
 
 RUN apk add --no-cache wget \
             libcurl \

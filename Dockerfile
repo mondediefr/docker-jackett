@@ -1,4 +1,4 @@
-FROM xataz/mono:5
+FROM mono:5
 
 ARG JACKETT_VER=0.10.657
 

@@ -12,7 +12,7 @@ LABEL description="Jackett based on alpine" \
       maintainer="xataz <https://github.com/xataz>" \
       build_ver=${BUILD_DATE}
 
-RUN apk add --no-cache wget \
+RUN apk add --no-cache --upgrade wget \
             libcurl \
             ca-certificates \
             s6 \

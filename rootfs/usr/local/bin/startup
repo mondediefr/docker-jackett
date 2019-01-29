@@ -11,6 +11,7 @@ INSTANCEID=${INSTANCEID-$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 100 | 
 
 if [ ! -e /home/jackett/.config/Jackett/ServerConfig.json ]; then
 	sed 's/<apikey>/'${APIKEY}'/;s/<instanceid>/'${INSTANCEID}'/' /tmp/ServerConfig.json > /home/jackett/.config/Jackett/ServerConfig.json
+    chown jackett:jackett /home/jackett/.config/Jackett/ServerConfig.json
 fi
 
 if [ '$@' == '' ]; then

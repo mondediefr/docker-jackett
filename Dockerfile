@@ -1,4 +1,4 @@
-FROM xataz/mono:5
+FROM mondedie/mono:5
 
 ARG JACKETT_VER=0.10.678
 ARG BUILD_DATE

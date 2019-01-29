@@ -8,6 +8,6 @@ add_tag() {
 }
 
 
-for tag in $(grep "tags=" ../Dockerfile | cut -d'"' -f2); do
+for tag in $(grep "tags=" Dockerfile | cut -d'"' -f2); do
 	add_tag ${tag}
 done

@@ -1,6 +1,6 @@
-FROM mondedie/mono:5
+FROM mondedie/mono:latest
 
-ARG JACKETT_VER=0.10.678
+ARG JACKETT_VER=0.10.724
 ARG BUILD_DATE
 
 
@@ -8,7 +8,7 @@ ENV UID=991 \
     GID=991
 
 LABEL description="Jackett based on alpine" \
-      tags="latest 0.10.678 0.10 0" \
+      tags="latest 0.10.724 0.10 0" \
       maintainer="xataz <https://github.com/xataz>" \
       build_ver=${BUILD_DATE}
 
